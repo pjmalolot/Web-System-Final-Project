@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&family=Poppins:wght@700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Poppins:wght@700&display=swap">
+    <title>Member</title>
+</head>
+<body>
+    <header>
+        <h1 class="logo"><span style="color:red;">Shoe</span><span style="color:#635985;">fficient.</span></h1>
+        <nav class="navbar">
+            <a href="#main">Home</a>
+            <a href="#about">About</a>
+            <a href="#shop">Shop</a>
+            <a href="#contact">Contact</a>
+            <button class="btnRegister" id="logout">Logout</button> 
+        </nav>
+    </header>
+
+    <div class="welcome">
+        <h2>Hi, <span id="firstname"></h2>
+        <div class="line"></div>
+        <p>Warmest greetings and a heartfelt welcome to Shoefficient!</p>
+        <p>We are delighted to have you as a valued member of our community.</p>
+    </div>
+    
+    <script>
+        let u = localStorage.getItem('user');
+        let data = JSON.parse(u);
+
+        document.getElementById('firstname').textContent = data['firstname'];
+
+        const logout = document.querySelector('#logout');
+        logout.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.location.replace('index.html');
+        })
+    </script>
+</body>
+</html>

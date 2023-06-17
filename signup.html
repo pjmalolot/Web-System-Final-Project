@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&family=Poppins:wght@700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Poppins:wght@700&display=swap">
+    <title>SignUp</title>
+</head>
+<body>
+    <header>
+        <h1 class="logo"><span style="color:red;padding: 0;">Shoe</span><span style="color:#635985;padding: 0;">fficient.</span></h1>
+        <nav class="navbar">
+            <a href="#main">Home</a>
+            <a href="#about">About</a>
+            <a href="#shop">Shop</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+   
+    <div class="container">
+        <form id="signup-form" class="form">
+            <h2>SIGN UP</h2>
+            <br>
+            <span id="espan"></span>
+
+            <div class="inputs">
+                <input type="text" placeholder="Firstname" id="firstname">
+            </div>
+            <small id="firstNerror"></small>
+
+            <div class="inputs">
+                <input type="text" placeholder="Lastname" id="lastname">
+            </div>
+            <small id="lastNerror"></small>
+
+            <div class="inputs">
+                <input type="text" placeholder="Email Address" id="email">
+            </div>
+            <small id="emailerror"></small>
+
+            <div class="inputs">
+                <input type="password" placeholder="Password" id="password">
+            </div>
+            <small id="passerror"></small>
+
+            <br>
+            <div class="checkbox">
+                <input type="checkbox" id="showPassword2" onchange="myFunction()"><label for="checkbox">Show Password</label>
+            </div>
+
+            <button type="submit" class="button2">REGISTER</button>
+            <div class="login">
+                Already have an account? <a href="login.html">Login</a> 
+            </div>
+        </form>
+    </div>
+    
+    <script src="js/function.js"></script>
+</body>
+</html>
