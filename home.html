@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoefficient</title>
+    <link rel="stylesheet" href="style-3.css">
+    <script src="https://kit.fontawesome.com/3a3297194c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <h1 class="logo"><span style="color:red;padding: 0;">Shoe</span>fficient.</h1>
+    <nav class="navbar">
+        <a href="#main">Home</a>
+        <a href="#about">About</a>
+        <a href="#shop">Shop</a>
+        <a href="#contact">Contact</a>
+        <button class="btnRegister" id="logout2">Logout</button> 
+    </nav>
+</header>
+    
+    <div class="bgImage" id="main">
+        <div class="overlay"></div>
+
+        <div class="main-content">
+          <h2>START YOUR DAY</h2>
+          <h1>with our store!</h2>
+        </div>
+    </div>
+
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="about_title">
+        <h4>About</h4>    
+      </div> 
+      <div class="about-img">
+           <img src="img/shoe.jpg">
+           <div class="about-text">
+             <h1>Welcome to<span> Shoefficient</span></h1>
+             <p>A shoe store offering a collection of high-quality and efficient footwear for everyone. Our store is designed to cater the needs of every individual by offering a wide range of shoes, from formal to casual, athletic to trendy. 
+                Our mission is to provide customers with comfortable, stylish and durable footwear options to suit their unique style and preferences. For those who prefer to browse and buy from the comfort of their homes, we also provide online shopping. Our online store is ideal for people with busy schedules or those who live farther 
+                away because it offers fast and reliable shipping options.</p>
+            </div>
+        </div>  
+    </section>
+
+    <!-- Shop  -->
+    <section class="shop" id="shop">
+      <div class="page"> 
+        <div class="shop_title">
+            <h4>Our Products</h4>    
+        </div>  
+        <div class="product-container">
+              <div class="product">
+                <div class="product-image">
+                  <img src="img/product1.png" alt="Shoe 1">
+                </div>
+                <h3>Adidas Women's Response Super 3.0</h3>
+                <p class="price">₱ 5,150</p>
+              </div>
+                  <div class="product">
+                <div class="product-image">
+                  <img src="img/product2.png" alt="Shoe 3">
+                </div>
+                <h3>Nike Court Legacy Next Nature</h3>
+                <p class="price">₱ 3,495</p>
+              </div>
+              <div class="product">
+                <div class="product-image">
+                  <img src="img/product3.png" alt="Shoe 2">
+                </div>
+                <h3>Nike Dunk Low Industrial Blue</h3>
+                <p class="price">₱ 6,524</p>
+              </div>
+              <div class="product">
+                <div class="product-image">
+                  <img src="img/product4.png" alt="Shoe 2">
+                </div>
+                <h3>Nike Air Max 1 Ultra Essential "Varsity Red"</h3>
+                <p class="price">₱ 10,909</p>
+            </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-content">
+          <h2>Get in Touch</h2>
+          <p>Have a question or need assistance? Fill out the form below and we'll get back to you as soon as possible.</p>
+        </div>
+        <div class="container">
+          <div class="info">
+            <div class="box">
+              <div class="text">
+                <h3>Address</h3>
+                <p>Cagayan de Oro City, Philippines</p>
+              </div>
+            </div>
+    
+            <div class="box">
+              <div class="text">
+                <h3>Cellphone</h3>
+                <p>0991 +++ ++++</p>
+              </div>
+            </div>
+    
+            <div class="box">
+              <div class="text">
+                <h3>Email</h3>
+                <p>shoefficientph@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="contactform">
+            <form>
+              <h2>Send Message</h2>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <div class="btnSend">
+                <a href="#main">Send</a>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <footer>
+          <p>&copy; 2023 Shoefficient. All rights reserved.</p>
+        </footer>
+  </section>
+
+
+  <script>
+    const logout = document.querySelector('#logout2');
+    logout.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.location.replace('index.html');
+    })
+  </script>
+
+</body>
+</html>

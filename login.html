@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&family=Poppins:wght@700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Poppins:wght@700&display=swap">
+    <script src="https://kit.fontawesome.com/3a3297194c.js" crossorigin="anonymous"></script>
+    <title>Login</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="logo"><span style="color:red;padding: 0;">Shoe</span>fficient.</h1>
+    </header>
+    
+    <div class="wrapper">
+        <form id="login-form" class="form">
+            <h2>LOGIN</h2>
+            <span id="espan"></span>
+
+            <div class="inputs">
+                <span class="icon"><i class="fa-solid fa-envelope" style="color: #ffffff;"></i></span>
+                <input type="text" placeholder="Email Address" id="lemail">
+            </div>
+            <small id="lemailerror"></small>
+
+            <div class="inputs">
+                <span class="icon"><i class="fa-solid fa-lock" style="color: #ffffff;"></i></span>
+                <input type="password" placeholder="Password" id="lpassword">
+            </div>
+            <small id="lpasserror"></small>
+
+            <br>
+            <div class="checkbox">
+                <input type="checkbox" id="showPassword" onchange="myFunction2()"><label for="checkbox">Show Password</label>
+            </div>
+            <button type="submit" class="button1">LOGIN</button>
+            <div class="signup">
+                Don't have an account? <a href="signup.html">Sign Up</a> 
+            </div>
+        </form>
+    </div>
+    
+    <script src="js/function.js"></script>
+</body>
+
+</html>
